@@ -1,0 +1,68 @@
+generated: '2026-08-02'
+method: derived
+source: well-known/bending-spoons-security.txt, security/bending-spoons-domain-security.yml,
+  https://support.bendingspoons.com/compliance
+scope: >-
+  Bending Spoons publishes no machine-readable API contract at the holding-company level
+  (no OpenAPI, Swagger, GraphQL, AsyncAPI, gRPC or MCP surface was found on any resolving
+  host), so the API-design standards families (OAuth2/OIDC, FAPI, SCIM, OData, FHIR,
+  PSD2, JSON:API, RFC 9457) are NOT APPLICABLE rather than failed. What can be asserted
+  is the web/security discovery posture that was actually probed.
+standards:
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: /.well-known/security.txt returns 200 text/plain, PGP-clearsigned, with
+    Canonical, Contact, Encryption, Expires and Preferred-Languages fields
+- id: openpgp-signed-security-txt
+  conforms: true
+  evidence: security.txt is clearsigned; key published at https://bendingspoons.com/pgp-key.txt
+- id: rfc8615-well-known-uris
+  conforms: true
+  evidence: discovery document served from the /.well-known/ path prefix
+- id: tls-1-3
+  conforms: true
+  evidence: bendingspoons.com negotiates TLSv1.3 (security/bending-spoons-domain-security.yml)
+- id: hsts
+  conforms: false
+  evidence: no Strict-Transport-Security header observed on bendingspoons.com
+- id: dnssec
+  conforms: false
+  evidence: no DNSSEC signing on the bendingspoons.com zone
+- id: caa
+  conforms: false
+  evidence: no CAA records published for bendingspoons.com
+- id: spf
+  conforms: true
+  evidence: SPF record present for bendingspoons.com
+- id: dmarc
+  conforms: true
+  evidence: DMARC record present with policy p=reject
+- id: openapi
+  conforms: false
+  applicable: false
+  evidence: no OpenAPI/Swagger document found on any resolving Bending Spoons host
+- id: asyncapi
+  conforms: false
+  applicable: false
+  evidence: no event, streaming or webhook surface published at the corporate level
+- id: a2a-agent-card
+  conforms: false
+  applicable: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json both 404 on every
+    probed host
+compliance_program:
+  url: https://support.bendingspoons.com/compliance
+  published: true
+  named_certifications: []
+  documents:
+  - Code of Ethics
+  - Organizational Models (Bending Spoons S.p.A., Holdings, Operations, Splice Video
+    Editor, AI Creativity)
+  - Modern Slavery Statement
+  - Whistleblowing platform
+  - Information for Law Enforcement Authorities
+  - Privacy and cookie policy
+  note: >-
+    The compliance hub is a real, published corporate compliance program, but it names no
+    third-party security certifications (no SOC 2, ISO 27001, PCI DSS, HIPAA or FedRAMP
+    claims were found), and no trust center exists at trust./security.<domain>.

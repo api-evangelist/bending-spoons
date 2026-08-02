@@ -1,17 +1,38 @@
 aid: bending-spoons
 name: Bending Spoons
-description: 'Bending Spoons is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Bending Spoons S.p.A. is a Milan, Italy technology company founded in
+  2013 that acquires established digital products and operates them for the long term
+  rather than reselling them. Its portfolio spans more than 50 acquisitions and includes
+  AOL, Brightcove, Eventbrite, Evernote, Harvest, Issuu, komoot, Loomly, Meetup, Remini,
+  Splice, StreamYard, Tractive, Vimeo and WeTransfer, serving over 500 million monthly
+  active users and more than 9 million monthly paying customers. The company listed
+  its ordinary shares on the Nasdaq Global Select Market under the ticker BSP on 1
+  July 2026. Bending Spoons itself publishes no public developer API, API documentation,
+  or developer portal at the holding-company level: every API surface in the group
+  belongs to an individual acquired product, each profiled separately in the API Evangelist
+  network. What the corporate entity does publish is a PGP-signed RFC 9116 security.txt,
+  a compliance hub, a support center, an investor relations site, and a small set of
+  first-party open-source Swift frameworks (Katana, Tempura).'
+image: https://bendingspoons.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/bending-spoons/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enriched
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Holding Company
+- Consumer Apps
+- Mobile Apps
+- Software
+- SaaS
+- Acquisitions
+- Publicly Traded
+- Italy
+- Portfolio
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,76 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/bending-spoons-vulnerability-disclosure.yml
+- type: Security
+  url: https://bendingspoons.com/.well-known/security.txt
+- type: Conformance
+  url: conformance/bending-spoons-conformance.yml
+- type: LLMsTxt
+  url: llms/bending-spoons-llms.txt
+- type: DomainSecurity
+  url: security/bending-spoons-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/bending-spoons_stock/
+  url: https://bendingspoons.com/
+- type: Support
+  url: https://support.bendingspoons.com/
+- type: Compliance
+  url: https://support.bendingspoons.com/compliance
+- type: PrivacyPolicy
+  url: https://bndspn.com/privacy-and-cookie-policy
+- type: Blog
+  url: https://medium.com/bendingspoons
+- type: BlogRSS
+  url: https://medium.com/feed/bendingspoons
+- type: GitHubOrganization
+  url: https://github.com/BendingSpoons
+- type: Careers
+  url: https://bendingspoons.com/careers
+- type: Investors
+  url: https://investors.bendingspoons.com/
+- type: Newsroom
+  url: https://investors.bendingspoons.com/newsroom
+- type: LinkedIn
+  url: https://linkedin.com/company/bendingspoons
+- type: Twitter
+  url: https://twitter.com/bendingspoons
+- type: WellKnown
+  url: well-known/bending-spoons-well-known.yml
+- type: SecurityTxt
+  url: well-known/bending-spoons-security.txt
+- type: Packages
+  url: packages/bending-spoons-packages.yml
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1
+x-portfolio:
+  note: >-
+    Bending Spoons operates these acquired products; each is profiled as its own provider
+    in the API Evangelist network. Bending Spoons itself exposes no API — these do.
+  companies:
+  - {name: AOL, slug: aol}
+  - {name: Brightcove, slug: brightcove}
+  - {name: Eventbrite, slug: eventbrite}
+  - {name: Evernote, slug: evernote}
+  - {name: Harvest, slug: harvest}
+  - {name: Loomly, slug: loomly}
+  - {name: Meetup, slug: meetup}
+  - {name: Meetup.com, slug: meetup-com}
+  - {name: StreamYard, slug: streamyard}
+  - {name: Tractive, slug: tractive}
+  - {name: Vimeo, slug: vimeo}
+  - {name: Vimeo OTT, slug: vimeo-ott}
+  not_yet_in_network:
+  - Issuu
+  - komoot
+  - Remini
+  - Splice Video Editor
+  - WeTransfer
+  - iTranslate
+  - Robokiller
+  - TrapCall
+  - TapeACall
+  - Alight Motion

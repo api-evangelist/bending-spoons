@@ -1,0 +1,39 @@
+generated: '2026-08-02'
+method: searched
+source: https://bendingspoons.com/.well-known/security.txt
+host: https://bendingspoons.com
+hosts_probed:
+- https://bendingspoons.com
+- https://www.bendingspoons.com
+- https://support.bendingspoons.com
+- https://investors.bendingspoons.com
+- https://jobs.bendingspoons.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  content_type: text/plain; charset=UTF-8
+  file: bending-spoons-security.txt
+  note: RFC 9116, PGP-signed (clearsigned). Also served on www., support. and investors. subdomains.
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+notes:
+- The bndspn.com short-link host answers HTTP 200 with an HTML body for every /.well-known/*
+  path (single-page-app catch-all); those responses were rejected as false positives and are
+  not recorded as hits.
+x-evidence:
+  fetched: '2026-08-02'
+  method: HTTP GET (curl, follow redirects)

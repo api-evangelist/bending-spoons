@@ -1,0 +1,92 @@
+generated: '2026-08-02'
+method: searched
+source: https://trunk.cocoapods.org/api/v1/pods/ + https://github.com/BendingSpoons
+note: >-
+  Bending Spoons publishes no public API, so these are NOT API client libraries / SDKs. They are
+  the company's own open-source iOS application frameworks, published first-party to CocoaPods
+  (trunk owner "Bending Spoons", opensource@bendingspoons.com) and Swift Package Manager. No
+  `SDKs` pointer is emitted for this repo, because there is no Bending Spoons API for these
+  libraries to be a client of.
+registries_probed:
+- registry: cocoapods
+  result: 4 first-party pods (owner verified via trunk API)
+- registry: npm
+  result: no first-party packages (a `bendingspoons` text search returns third-party personal packages only)
+- registry: pypi
+  result: none published (the org's Poetry plugins are GitHub-only, in BendingSpoonsArchive)
+- registry: maven-central
+  result: none found
+- registry: nuget
+  result: none found
+- registry: rubygems
+  result: none found (BendingSpoonsArchive/xcake and /fastlane are forks, not first-party releases)
+- registry: crates.io
+  result: none found
+- registry: packagist
+  result: none found
+- registry: pkg.go.dev
+  result: none found (BendingSpoonsArchive Go repos are unreleased/archived)
+packages:
+- language: swift
+  registry: cocoapods
+  name: Katana
+  url: https://cocoapods.org/pods/Katana
+  install: pod 'Katana'
+  version: 6.0.3
+  source_code: https://github.com/BendingSpoons/katana-swift
+  license: MIT
+  description: Redux-inspired Swift framework for iOS application business logic.
+  official: true
+  kind: open-source-framework
+- language: swift
+  registry: cocoapods
+  name: KatanaUI
+  url: https://cocoapods.org/pods/KatanaUI
+  install: pod 'KatanaUI'
+  source_code: https://github.com/BendingSpoonsArchive/katana-ui-swift
+  license: MIT
+  description: UIKit port of React, built on top of Katana.
+  official: true
+  kind: open-source-framework
+- language: swift
+  registry: cocoapods
+  name: KatanaElements
+  url: https://cocoapods.org/pods/KatanaElements
+  install: pod 'KatanaElements'
+  source_code: https://github.com/BendingSpoonsArchive/katana-ui-swift
+  license: MIT
+  description: UIKit element wrappers for KatanaUI.
+  official: true
+  kind: open-source-framework
+- language: swift
+  registry: cocoapods
+  name: Tempura
+  url: https://cocoapods.org/pods/Tempura
+  install: pod 'Tempura'
+  version: 9.0.3
+  source_code: https://github.com/BendingSpoons/tempura-swift
+  license: MIT
+  description: Holistic approach to iOS development, inspired by Redux and MVVM; built on Katana.
+  official: true
+  kind: open-source-framework
+- language: swift
+  registry: swift-package-manager
+  name: katana-swift
+  url: https://github.com/BendingSpoons/katana-swift
+  install: .package(url "https://github.com/BendingSpoons/katana-swift.git", from "6.0.3")
+  official: true
+  kind: open-source-framework
+- language: swift
+  registry: swift-package-manager
+  name: tempura-swift
+  url: https://github.com/BendingSpoons/tempura-swift
+  install: .package(url "https://github.com/BendingSpoons/tempura-swift.git", from "9.0.3")
+  official: true
+  kind: open-source-framework
+x-evidence:
+  fetched: '2026-08-02'
+  cocoapods_trunk_owner_emails:
+  - katana@bendingspoons.com
+  - opensource@bendingspoons.com
+  github_org: https://github.com/BendingSpoons
+  github_archive_org: https://github.com/BendingSpoonsArchive
