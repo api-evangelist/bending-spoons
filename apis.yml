@@ -13,6 +13,17 @@ description: 'Bending Spoons S.p.A. is a Milan, Italy technology company founded
   network. What the corporate entity does publish is a PGP-signed RFC 9116 security.txt,
   a compliance hub, a support center, an investor relations site, and a small set of
   first-party open-source Swift frameworks (Katana, Tempura).'
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://bendingspoons.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/bending-spoons/refs/heads/main/apis.yml
 x-type: company
