@@ -64,31 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bending Spoons S.p.A. (Nasdaq: BSP) is a Milan, Italy technology company founded in 2013 that acquires
-established digital products and operates them for the long term. Its portfolio spans more than 50
-acquisitions — AOL, Brightcove, Eventbrite, Evernote, Harvest, Issuu, komoot, Loomly, Meetup, Remini,
-Splice, StreamYard, Tractive, Vimeo and WeTransfer among them — serving over 500 million monthly active
-users.
+Bending Spoons S.p.A. is a Milan, Italy technology company founded in 2013 that acquires established digital products and operates them for the long term rather than reselling them. Its portfolio spans more than 50 acquisitions and includes AOL, Brightcove, Eventbrite, Evernote, Harvest, Issuu, komoot, Loomly, Meetup, Remini, Splice, StreamYard, Tractive, Vimeo and WeTransfer, serving over 500 million monthly active users and more than 9 million monthly paying customers. The company listed its ordinary shares on the Nasdaq Global Select Market under the ticker BSP on 1 July 2026. Bending Spoons itself publishes no public developer API, API documentation, or developer portal at the holding-company level: every API surface in the group belongs to an individual acquired product, each profiled separately in the API Evangelist network. What the corporate entity does publish is a PGP-signed RFC 9116 security.txt, a compliance hub, a support center, an investor relations site, and a small set of first-party open-source Swift frameworks (Katana, Tempura).
 
-- https://bendingspoons.com/
+**Areas:** Company · Holding Company · Consumer App · Mobile App · Software · Software-as-a-Service · Acquisition · Publicly Traded · Italy · Portfolio
 
-## No API at the holding-company level
+## Bending Spoons on APIs.io
 
-Bending Spoons publishes **no public developer API, API reference, or developer portal** as a corporate
-entity. Contract discovery on 2026-08-02 probed `bendingspoons.com`, `www.`, `support.`, `investors.`
-and `jobs.` for OpenAPI/Swagger, GraphQL, MCP `tools/list`, AsyncAPI and A2A agent cards, and resolved
-`api.`, `developer.`, `developers.`, `docs.`, `status.`, `trust.` and `security.` — none of those
-subdomains resolve, and every spec path returned 404. Every API surface in the group belongs to an
-individual acquired product, each profiled separately in this network (see `x-portfolio` in `apis.yml`).
+Everything profiled for Bending Spoons is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bending-spoons/](https://apis.io/providers/bending-spoons/)** — or go straight to one of the APIs or properties below.
 
-## What is captured here
+### Published properties
 
-| Artifact | Method |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bending Spoons Domain Security](https://apis.io/security/bending-spoons/bending-spoons-domain-security/)
+- [Bending Spoons Vulnerability Disclosure](https://apis.io/security/bending-spoons/bending-spoons-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bendingspoons.com/)
+- [Support](https://support.bendingspoons.com/)
+- [Blog](https://medium.com/bendingspoons)
+- [Security](https://bendingspoons.com/.well-known/security.txt)
+- [Compliance](https://support.bendingspoons.com/compliance)
+- [Privacy policy](https://bndspn.com/privacy-and-cookie-policy)
+- [GitHub](https://github.com/BendingSpoons)
+
+## API Evangelist rating
+
+**Kin Score 13.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `well-known/bending-spoons-security.txt` | searched — RFC 9116, PGP-clearsigned, verbatim |
-| `well-known/bending-spoons-well-known.yml` | searched — probe index with statuses |
-| `security/bending-spoons-vulnerability-disclosure.yml` | searched — security@bendingspoons.com, OpenPGP key |
-| `security/bending-spoons-domain-security.yml` | probed — TLS 1.3, SPF, DMARC p=reject; no HSTS/DNSSEC/CAA |
-| `packages/bending-spoons-packages.yml` | searched — first-party open-source Swift frameworks (not API SDKs) |
-| `conformance/bending-spoons-conformance.yml` | derived — web/security posture; API standards N/A |
-| `llms/bending-spoons-llms.txt` | generated |
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bending-spoons/](https://apis.io/providers/bending-spoons/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bending Spoons: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bending-spoons/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
